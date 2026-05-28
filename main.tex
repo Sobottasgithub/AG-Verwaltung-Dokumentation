@@ -1,0 +1,28 @@
+\documentclass[twoside]{article}
+\usepackage{fancyhdr}
+
+\usepackage[paperheight=16cm, paperwidth=12cm,
+includehead,
+nomarginpar,
+textwidth=10cm,
+headheight=25pt,
+]{geometry}
+
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{\textbf{AG-Verwaltung-Dokumentation} (28/05/2026)\\\textbf{Webdatenbankprojekt}}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,CE]{From: Patrick Schulze}
+
+\input{sections/workflow.tex}
+\input{sections/difficulties.tex}
+\input{sections/help.tex}
+\input{sections/ki_use.tex}
+\input{sections/person_help.tex}
+\input{sections/sources.tex}
+\input{sections/reflection.tex}
+\input{sections/declaration_of_originality.tex}
+
+\end{document}
