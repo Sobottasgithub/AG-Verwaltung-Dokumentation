@@ -5,7 +5,7 @@ Das login ist nicht nur sicher, es ist auch noch sehr gut durchdacht!\\
 Um die Sicherheit zu gewährleisten, werden PDO prepared statements verwendet und das Passwort nur als argon2 Hash in der Datenbank hinterlegt.\\
 Die Lehrer melden sich mithilfe ihres Kürzels und ihres Passworts an. Das gleiche gilt auch für die Schulleitung. Der Table von der Schulleitung hat 
 das Kürzel von dem Lehrertable als Fremdschlüssel und joined den LehrerLoginTable. Somit ist jeder aus der Schulleitung auch zwangsweise ein Lehrer.
-Der Adminbereich hat seinen eigenen table, in dem aber ebenfalls nur der Hash gespeichert ist, sowie der username.\\
+Der Adminbereich hat seinen eigenen table, in dem aber ebenfalls nur der Hash gespeichert ist, sowie der Username.\\
 Sobald der user angemeldet ist, wird ein cookie gesetzt. Wenn dieser nicht gesetzt sein sollte, ist es unmöglich die Pages aufzurufen.\\
 \subsubsection{Adminpage}
 Auf der Adminpage kann man alle Daten löschen, updaten oder erstellen.\\
