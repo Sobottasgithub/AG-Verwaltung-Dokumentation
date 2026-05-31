@@ -1,10 +1,10 @@
 \section{Probleme und Lösungen}
 \subsection{Nur eine AG pro Lehrer}
-Bei jedem Lehrer konnte am Anfang nur eine Ag angezeigt werden, weil ich nur den ersten Entry gefetcht habe. 
-Das ließ sich schnell beheben. Erst hab ich mit einem fetchAll alle AGs gefetcht, welche als leitung das Kürzel des Lehrers hatten.
-Dann konnte ich mit einem foreach für jede Row die Schüler Anzeigen.
+Bei jedem Lehrer konnte am Anfang nur eine AG angezeigt werden, weil ich nur den ersten Entry gefetcht habe. 
+Das ließ sich schnell beheben. Erst hab ich mit einem fetchAll alle AGs gefetcht, welche als Leitung das Kürzel des Lehrers hatten.
+Dann konnte ich mit einem foreach für jede Row die Schüler anzeigen.
 
 \subsection{Variablen Überschreibung Seiteneffekt}
 \href{https://github.com/Sobottasgithub/AG-Verwaltung/commit/b7c7bbeca822e3e15bb221e4e757440314da6ea3}{\textbf{Commit: b7c7bbe}}\\
-Da ich die Credentials (\$password) in der Datenbank Verbindung gleich wie die Variable, in der das Adminpasswort gespeichert wird benannt habe, wurde das Adminpasswort überschrieben und in password\_verify() mit dem echten Passwort Hash verglichen.
+Da ich die Credentials (\$password) in der Datenbank gleich wie die Variable, in der das Adminpasswort gespeichert wird, benannt habe, wurde das Adminpasswort überschrieben und in password\_verify() mit dem echten Passwort Hash verglichen.
 \newpage
